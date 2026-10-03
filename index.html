@@ -62,8 +62,16 @@
         #0b111c;
       display:grid;
       place-items:center;
-      font-size:72px;
       margin-bottom:22px;
+      padding:18px;
+    }
+    .brand-logo{
+      display:block;
+      width:min(82%,420px);
+      height:min(82%,420px);
+      aspect-ratio:1/1;
+      object-fit:contain;
+      border-radius:14px;
     }
     .title{font-size:27px;font-weight:900;margin:0 0 14px}
     .desc{
@@ -240,7 +248,7 @@
     <div class="hint">Tekan Buy untuk membuka pembayaran QRIS</div>
 
     <section class="card">
-      <div class="cover">🛍️</div>
+      <div class="cover"><img class="brand-logo" src="logo-rwm.jpg" alt="Logo RWM"></div>
       <h3 class="title" id="cardProduct">Produk Digital Premium</h3>
       <p class="desc">
         Contoh halaman produk digital. Nama produk, harga, role, masa aktif,
@@ -294,18 +302,18 @@
   <script>
     // ================== CONFIG ==================
     const CONFIG = {
-      product: "APK BUG SYAM ",
-      role: "Full Up",
+      product: "Produk Digital Premium",
+      role: "Member",
       duration: "Permanen",
       price: 40000,
       minimumDpPercent: 50,
 
       // Ganti dengan username Telegram kamu TANPA @
-      telegramUsername: "RazzKece",
+      telegramUsername: "USERNAME_KAMU",
 
       // Ganti dengan nomor WhatsApp format internasional TANPA +, spasi, atau tanda -
       // Contoh Indonesia: 6281234567890
-      whatsappNumber: "6283110155731"
+      whatsappNumber: "6281234567890"
     };
     // ============================================
 
